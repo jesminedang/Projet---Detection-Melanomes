@@ -8,20 +8,19 @@ Created on Thu Apr 11 16:14:30 2019
 import numpy as np
 import cv2
 
+# Upload a photo
 img = cv2.imread("IMGTRAIN/IMD13.jpg")
 hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 blur = cv2.GaussianBlur(gray, (17, 17), 32)
 ret,thresh = cv2.threshold(blur,0,255,cv2.THRESH_BINARY_INV+cv2.THRESH_OTSU)
-#thresh = cv2.adaptiveThreshold(blur,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY,11,2)
-#thresh = cv2.adaptiveThreshold(blur,255,cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY,11,2)
+
 im2, contours,hierarchy = cv2.findContours(thresh, cv2.RETR_EXTERNAL, 
 					 cv2.CHAIN_APPROX_SIMPLE)
 
 cnt = max(contours, key=cv2.contourArea)
 
-#mask = np.zeros(img.shape,np.uint8)
-#cv2.drawContours(mask,cnt,-1)
+
 if len(cnt) > 4:
 	ellipse = cv2.fitEllipse(cnt)
 	x,y,w,h = cv2.boundingRect(cnt)
