@@ -9,7 +9,7 @@ Nous avons utilisé la méthode du Seuillage d'image (Thresholding ).
 (Nous n'avons pas encore fini cette étape).
 
 -------------------------------------------------------------------------------------------------------
-2. Détection d'asymétrie: (ficher asymmetric.py)
+2. Détection d'asymétrie: (fichier asymmetric.py)
 
 Nous l'avons pris comme déviation des formes standard. La plupart des grains de beauté ont la même forme que l'ellipse. 
 Nous avons donc créé l'ellipse la mieux ajustée, puis comparé son écart à notre ellipse de meilleur ajustement 
