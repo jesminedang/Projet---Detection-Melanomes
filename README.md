@@ -1,26 +1,25 @@
 # Projet---Detection-Melanomes
 
-Présentation:
+Introduction:
 
-Détection de mélanomes est la méthode de traitement d’image pour prévoir la risque de cancer de peau. 
+Détection de mélanomes:  Traitement d’image pour prévoir la risque de cancer de peau. 
 
 
 Objectif:
 
-Télécharger une image d'un bouton que nous doutons il est le symptôme de mélanomes. Notre mission est de séparer la forme de la taupe et de lister sa couleur. 
+1. Créer une application Web pour télécharger une image de mélanome.
+2. Extraire les attributs de forme et de couleur asymétriques.
  
  
 Technologie utilisée:
 
-    Traitement d’image: une bibliothèque graphique libre Opencv.
+    Traitement d’image: une bibliothèque graphique libre OpenCV, Python.
     
-    Programme d’application web: Buiding a full stack application web.
+    Programme d’application web:
     
        Back-end: Python.
        
        Front-end: HTML, CSS et Javascript.
 
 
-Méthode:
 
-Segmentation image.
