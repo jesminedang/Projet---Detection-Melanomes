@@ -1,15 +1,19 @@
 
 Nous avons effectué deux tâches:
 
-1. Segmentation d'Image:
+1. Segmentation d'Image: (fichier segmentation.py)
 
 Nous avons utilisé la méthode du Seuillage d'image (Thresholding ). 
 À partir d'une image en niveaux de gris, le seuillage peut être utilisé pour créer des images binaires. 
+
 (Nous n'avons pas encore fini cette étape).
 
-2. Détection d'asymétrie:
+-------------------------------------------------------------------------------------------------------
+2. Détection d'asymétrie: (ficher asymmetric.py)
 
 Nous l'avons pris comme déviation des formes standard. La plupart des grains de beauté ont la même forme que l'ellipse. 
 Nous avons donc créé l'ellipse la mieux ajustée, puis comparé son écart à notre ellipse de meilleur ajustement 
 et l'avons jugée en fonction d'un facteur déterminé en prenant la moyenne des écarts de grain de beauté cancéreux.
 Dans ce cas, c'était 0,099. Si un grain de beauté s'avérait inférieur à cette valeur, il serait considéré comme cancéreux.
+
+--------------------------------------------------------------------------------------------------------
